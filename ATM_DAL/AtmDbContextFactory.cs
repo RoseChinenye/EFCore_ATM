@@ -15,7 +15,7 @@ namespace ATM_DAL
         {
             var optionsBuilder = new DbContextOptionsBuilder<AtmDbContext>();
 
-            string connectionString = @"Data Source=LAPTOP-AI62M7MS\SQLEXPRESS;Initial Catalog=EFCoreAtmAppDatabase;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            string connectionString = @"Data Source=(Paste your server name here);Initial Catalog=EFCoreAtmAppDatabase;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
             optionsBuilder.UseSqlServer(connectionString, options =>
             {
